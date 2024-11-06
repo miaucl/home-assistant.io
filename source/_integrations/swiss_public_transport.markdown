@@ -27,7 +27,7 @@ The public timetables are coming from [Swiss public transport](https://transport
 
 ## Set up a connection
 
-The minimum configuration for a connection requires a _start_ and _end_ station.
+The minimum configuration for a connection requires a _start_ and _end_ station (e.g., "Zürich HB").
 
 Optionally, you can provide up to 5 additional _via_ stations.
 
@@ -39,7 +39,7 @@ The _Time mode_ allows for control over the time of the connections being displa
 
 - Now (default): Provide the next connections
 - At a fixed time of day: Provide the connections which depart at a fixed time of day (e.g. 18:15 in the evening)
-- At an offset from now: Provide the next possible connections which depart after a specified offset (e.g. in 15min from now)
+- At an offset from now: Provide the next possible connections which depart after a specified offset (e.g., 15 minutes from now, which helps account for a 15-minute walk to the station)
 
 ![Time mode option](/images/integrations/swiss_public_transport/config_flow_time_mode.png)
 
@@ -58,6 +58,8 @@ For people working business hours, a set-up using the `fixed` option in the _Tim
 ### Departure vs Arrival
 
 Usually, one wants to know when a connection **departs** (default), but in case where the opposite is needed and one wants to know when a connection **arrives**, choose `arrival` as the relevant station in the dropdown.
+
+When configured for arrival time, the sensor will display the arrival time at the destination instead of the departure time from the start station. This is particularly useful for automations that need to trigger based on arrival times.
 
 ![Departure vs arrival option](/images/integrations/swiss_public_transport/config_flow_departure_arrival.png)
 
