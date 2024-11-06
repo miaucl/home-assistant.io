@@ -57,7 +57,7 @@ For people working business hours, a set-up using the `fixed` option in the _Tim
 
 ### Departure vs Arrival
 
-Usually, one wants to know when a connection **departs** (default), but in case where the opposite is needed and one wants to know when a connection **arrives**, choose _Show arrival time at end station_ as the relevant station in the dropdown.
+Usually, one wants to know when a connection **departs** (default), but in case where the opposite is needed and one wants to know when a connection **arrives**, select "Show arrival time at end station" in the time reference dropdown.
 
 When configured for arrival time, the sensor will display the arrival time at the destination instead of the departure time from the start station. This is particularly useful for automations that need to trigger based on arrival times.
 
