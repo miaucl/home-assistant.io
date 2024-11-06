@@ -51,7 +51,7 @@ Usually, it takes some time to walk to the closest bus station from home, which 
 
 #### Use case: Daily train home
 
-For people working business hours, a set up using the `fixed` option in the _Time mode_ allows to pinpoint the exact same train each day to commute home. Set up automation to send a push notification to get informed early.
+For people working business hours, a set-up using the `fixed` option in the _Time mode_ allows you to identify the same train each day for commuting home. Set up automation to send a push notification to get informed early.
 
 ![Offset time mode option](/images/integrations/swiss_public_transport/config_flow_time_offset.png)
 
@@ -63,7 +63,7 @@ Usually, one wants to know when a connection **departs** (default), but in case 
 
 #### Use case: Inform family of train arriving late
 
-A popular use case would be to know if your spouse coming home is late on his/her train and sending out a push notification or displaying it at home.
+A popular use case would be to know if your family member is running late and sending out a push notification or displaying their arrival time at home.
 
 ## Actions
 
