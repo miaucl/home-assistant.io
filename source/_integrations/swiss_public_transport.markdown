@@ -25,6 +25,46 @@ The [Stationboard](https://transport.opendata.ch/examples/stationboard.html) web
 
 The public timetables are coming from [Swiss public transport](https://transport.opendata.ch/).
 
+## Set up a connection
+
+The minimum configuration for a connection requires a _start_ and _end_ station.
+
+Optionally, you can provide up to 5 additional _via_ stations.
+
+![Config flow](/images/integrations/swiss_public_transport/config_flow.png)
+
+### Time mode
+
+The _Time mode_ allows for control over the time of the connections being displayed.
+
+- Now (default): Provide the next connections
+- At a fixed time of day: Provide the connections which depart at a fixed time of day (e.g. 18:15 in the evening)
+- At an offset from now: Provide the next possible connections which depart after a specified offset (e.g. in 15min from now)
+
+![Time mode option](/images/integrations/swiss_public_transport/config_flow_time_mode.png)
+
+#### Use case: Next connection at my local bus stop
+
+Usually, it takes some time to walk to the closest bus station from home, which can be modeled using the `offset` option in the _Time mode_ dropdown, filtering out connections which are not reachable anymore. This information can then be displayed at the door or on your mobile device.
+
+![Fixed time mode option](/images/integrations/swiss_public_transport/config_flow_time_fixed.png)
+
+#### Use case: Daily train home
+
+For people working business hours, a set up using the `fixed` option in the _Time mode_ allows to pinpoint the exact same train each day to commute home. Set up automation to send a push notification to get informed early.
+
+![Offset time mode option](/images/integrations/swiss_public_transport/config_flow_time_offset.png)
+
+### Departure vs Arrival
+
+Usually, one wants to know when a connection **departs** (default), but in case where the opposite is needed and one wants to know when a connection **arrives**, choose `arrival` as the relevant station in the dropdown.
+
+![Departure vs arrival option](/images/integrations/swiss_public_transport/config_flow_departure_arrival.png)
+
+#### Use case: Inform family of train arriving late
+
+A popular use case would be to know if your spouse coming home is late on his/her train and sending out a push notification or displaying it at home.
+
 ## Actions
 
 The Swiss public transport integration has the following action:
