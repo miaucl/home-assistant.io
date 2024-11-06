@@ -47,13 +47,13 @@ The _Time mode_ allows for control over the time of the connections being displa
 
 Usually, it takes some time to walk to the closest bus station from home, which can be modeled using the `offset` option in the _Time mode_ dropdown, filtering out connections which are not reachable anymore. This information can then be displayed at the door or on your mobile device.
 
-![Fixed time mode option](/images/integrations/swiss_public_transport/config_flow_time_fixed.png)
+![Offset time mode option](/images/integrations/swiss_public_transport/config_flow_time_offset.png)
 
 #### Use case: Daily train home
 
 For people working business hours, a set-up using the `fixed` option in the _Time mode_ allows you to identify the same train each day for commuting home. Set up automation to send a push notification to get informed early.
 
-![Offset time mode option](/images/integrations/swiss_public_transport/config_flow_time_offset.png)
+![Fixed time mode option](/images/integrations/swiss_public_transport/config_flow_time_fixed.png)
 
 ### Departure vs Arrival
 
