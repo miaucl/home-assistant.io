@@ -27,7 +27,7 @@ The public timetables are coming from [Swiss public transport](https://transport
 
 ## Set up a connection
 
-The minimum configuration for a connection requires a _start_ and _end_ station (e.g., "Zürich HB").
+The minimum configuration for a connection requires a _start_ and _end_ station (for example, "Zürich HB").
 
 Optionally, you can provide up to 5 additional _via_ stations.
 
@@ -35,11 +35,11 @@ Optionally, you can provide up to 5 additional _via_ stations.
 
 ### Time mode
 
-The _Time mode_ allows for control over the time of the connections being displayed.
+The _Time mode_ allows you to specify the time of the connections.
 
-- Now (default): Provide the next connections
-- At a fixed time of day: Provide the connections which depart at a fixed time of day (e.g. 18:15 in the evening)
-- At an offset from now: Provide the next possible connections which depart after a specified offset (e.g., 15 minutes from now, which helps account for a 15-minute walk to the station)
+- Now (default): Provide the next connections.
+- At a fixed time of day: Provide the connections that depart at a fixed time of day (for example, 18:15 in the evening)
+- At an offset from now: Provide the next possible connections which depart after a specified offset (for example, 15 minutes from now, which helps account for a 15-minute walk to the station)
 
 ![Time mode option](/images/integrations/swiss_public_transport/config_flow_time_mode.png)
 
@@ -51,17 +51,17 @@ Usually, it takes some time to walk to the closest bus station from home, which 
 
 #### Use case: Daily train home
 
-For people working business hours, a set-up using the `fixed` option in the _Time mode_ allows you to identify the same train each day for commuting home. Set up automation to send a push notification to get informed early.
+For people working business hours, a set-up using the `fixed` option in the _Time mode_ allows you to identify the same train each day for commuting home. Set up an automation to send a push notification to get informed early.
 
 ![Fixed time mode option](/images/integrations/swiss_public_transport/config_flow_time_fixed.png)
 
-### Departure vs Arrival
+### Departure versus Arrival
 
 Usually, one wants to know when a connection **departs** (default), but in case where the opposite is needed and one wants to know when a connection **arrives**, select "Show arrival time at end station" in the time reference dropdown.
 
 When configured for arrival time, the sensor will display the arrival time at the destination instead of the departure time from the start station. This is particularly useful for automations that need to trigger based on arrival times.
 
-![Departure vs arrival option](/images/integrations/swiss_public_transport/config_flow_departure_arrival.png)
+![Departure versus arrival option](/images/integrations/swiss_public_transport/config_flow_departure_arrival.png)
 
 #### Use case: Inform family of train arriving late
 
