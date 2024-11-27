@@ -21,6 +21,15 @@ The [Swiss public transport API](https://transport.opendata.ch/) only allows 100
 
 The [Stationboard](https://transport.opendata.ch/examples/stationboard.html) website can help to determine the exact name of the start and the end station.
 
+{% configuration_basic %}
+Start station:
+    description: "The departure station for the start of the connection."
+End station:
+    description: "The arrival station for the end of the connection."
+Via stations:
+    description: "List of up to 5 via stations"
+{% endconfiguration_basic %}
+
 {% include integrations/config_flow.md %}
 
 The public timetables are coming from [Swiss public transport](https://transport.opendata.ch/).
@@ -43,3 +52,9 @@ Fetch the connections for a specific instance.
 ## Defining a custom polling interval
 
 {% include common-tasks/define_custom_polling.md %}
+
+## Remove integration
+
+This integration follows standard integration removal, no extra steps are required.
+
+{% include integrations/remove_device_service.md %}
