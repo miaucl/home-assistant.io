@@ -56,6 +56,10 @@ For example, if you add a pasta recipe, ingredients like "500g pasta" and "2 tom
 
 In contrast, in your "Additional purchases" list, you can freely add items like "Kitchen towels" or "Dish soap", and modify or remove them as needed.
 
+## Buttons
+
+The "clear shopping list and additional purchase" button allows to _reset_ both shopping lists, mirroring the same functionality available in the Cookidoo app.
+
 ## Known Limitations
 
 {% important %}
